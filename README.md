@@ -18,5 +18,5 @@ This plugin is used to display slide show of different testimonials automaticall
 
 •	Users need to install a script file that contains the plugin function. 
 
-•	A .css file needs to be installed as well. 
+•	.css files need to be installed as well. 
 
