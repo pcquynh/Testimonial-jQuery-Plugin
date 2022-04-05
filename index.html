@@ -5,61 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testimonial Plugin</title>
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="testimonial.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
-    <div class="container"></div>
-    <h1>jQuery Testimonial Demo</h1>
-    <div id="slider">
-      <div id="btn-prev"></div>
-      <div id="btn-next"></div>
-      <ul class="slides">
-        <li class="slide">
-          <img src="images/1.jpg" />
-          <div class="feedback-container">
-            <div class="feedback"></div>
-            <div class="name"></div>
-            <div class="rating"></div>
-          </div>
-        </li>
-        <li class="slide">
-          <img src="images/2.jpg" />
-          <div class="feedback-container">
-            <div class="feedback"></div>
-            <div class="name"></div>
-            <div class="rating"></div>
-          </div>
-        </li>
-        <li class="slide">
-          <img src="images/3.jpg" />
-          <div class="feedback-container">
-            <div class="feedback"></div>
-            <div class="name"></div>
-            <div class="rating"></div>
-          </div>
-        </li>
-        <li class="slide">
-          <img src="images/4.jpg" />
-          <div class="feedback-container">
-            <div class="feedback"></div>
-            <div class="name"></div>
-            <div class="rating"></div>
-          </div>
-        </li>
-        <li class="slide">
-          <img src="images/5.jpg" />
-          <div class="feedback-container">
-            <div class="feedback"></div>
-            <div class="name"></div>
-            <div class="rating"></div>
-          </div>
-        </li>
-      </ul>
+    <div class="container">
+      <h1>jQuery Testimonial Demo</h1>
+      <div id="slider">
+        <div id="btn-prev">
+          <i class="fa fa-angle-left"></i><span>Previous</span>
+        </div>
+        <div id="btn-next">
+          <i class="fa fa-angle-right"></i><span>Next</span>
+        </div>
+        <ul class="slides">
+          <li class="slide">
+            <img src="images/1.jpg" />
+            <div class="feedback-container">
+              <div class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus in cupiditate fugiat amet neque nisi mollitia. Impedit
+                atque esse recusandae.
+              </div>
+              <div class="name">John Smith</div>
+              <div class="rating">3.5</div>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="images/2.jpg" />
+            <div class="feedback-container">
+              <div class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus in cupiditate fugiat amet neque nisi mollitia. Impedit
+                atque esse recusandae.
+              </div>
+              <div class="name">Emma Claire</div>
+              <div class="rating">4.3</div>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="images/3.jpg" />
+            <div class="feedback-container">
+              <div class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus in cupiditate fugiat amet neque nisi mollitia. Impedit
+                atque esse recusandae.
+              </div>
+              <div class="name">David Williams</div>
+              <div class="rating">5</div>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="images/4.jpg" />
+            <div class="feedback-container">
+              <div class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus in cupiditate fugiat amet neque nisi mollitia. Impedit
+                atque esse recusandae.
+              </div>
+              <div class="name">Sarah Jones</div>
+              <div class="rating">3.5</div>
+            </div>
+          </li>
+          <li class="slide">
+            <img src="images/5.jpg" />
+            <div class="feedback-container">
+              <div class="feedback">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus in cupiditate fugiat amet neque nisi mollitia. Impedit
+                atque esse recusandae.
+              </div>
+              <div class="name">Susan Boyles</div>
+              <div class="rating">2.5</div>
+            </div>
+          </li>
+        </ul>
+      </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="testimonial.js"></script>
+    <script src="jquery.testimonial-display.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
