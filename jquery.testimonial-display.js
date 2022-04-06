@@ -26,11 +26,19 @@
     var nextBtn = $("#btn-next");
 
     return this.each(function () {
+      preloadImage();
       autoplay();
       setSlideNameProperties();
       setSlideImageProperties();
 
       addRatingToFeedback();
+
+      function preloadImage() {
+        $(".slide img").each(function () {
+          let preloadedImage = new Image();
+          $(preloadedImage).attr("src", $(this).attr("src"));
+        });
+      }
 
       function autoplay() {
         settings.timer = setInterval(function () {
