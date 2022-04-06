@@ -8,6 +8,11 @@
           fontWeight: "bold",
           color: "red",
         },
+        slideImage: {
+          width: "200px",
+          height: "200px",
+          borderRadius: "50%",
+        },
 
         animationSpeed: 1000,
         pause: 3000,
@@ -23,6 +28,7 @@
     return this.each(function () {
       autoplay();
       setSlideNameProperties();
+      setSlideImageProperties();
 
       addRatingToFeedback();
 
@@ -81,6 +87,15 @@
           "font-size": settings.slideName.fontSize,
           "font-weight": settings.slideName.fontWeight,
           color: settings.slideName.color,
+        });
+      }
+
+      function setSlideImageProperties() {
+        var slideImage = $(".slide img");
+        slideImage.css({
+          width: settings.slideImage.width,
+          height: settings.slideImage.height,
+          "border-radius": settings.slideImage.borderRadius,
         });
       }
 
